@@ -20,12 +20,17 @@ useEffect(()=>{
 console.log("Selected Contact:", contact)
 
 return (
-    <div>
-        <h2>{contact.name}</h2>
-        <p>{contact.email}</p>
-        <p>{contact.phone}</p>
-        <button onClick={()=>setSelectedContactID(null)}>Back to Full List</button>
-    </div>
+    <> {
+       contact &&  (
+            <div>
+            <h2>{contact.name}</h2>
+            <p>{contact.email}</p>
+            <p>{contact.phone}</p>
+            <button onClick={()=>setSelectedContactID(null)}>Back to Full List</button>
+        </div>
+        )
+    }
+    </>
   )
 
 }

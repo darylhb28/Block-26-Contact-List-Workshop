@@ -17,6 +17,8 @@ useEffect(()=>{
     fetchSelectedContact ()
 },[selectedContactID])
 
+console.log("Selected Contact:", contact)
+
 return (
     <div>
         <h2>{contact.name}</h2>

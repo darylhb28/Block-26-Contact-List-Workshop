@@ -22,10 +22,10 @@ console.log("Selected Contact:", contact)
 return (
     <> {
        contact &&  (
-            <div>
+            <div className="contactlist">
             <h2>{contact.name}</h2>
-            <p>{contact.email}</p>
-            <p>{contact.phone}</p>
+            <p>email: {contact.email}</p>
+            <p>phone: {contact.phone}</p>
             <button onClick={()=>setSelectedContactID(null)}>Back to Full List</button>
         </div>
         )

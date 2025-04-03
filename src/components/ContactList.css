@@ -1,0 +1,13 @@
+.contactlist{
+    border: solid black 4px;
+    padding: 10px;
+}
+
+.row:hover{
+    text-decoration: underline;
+    color: blue
+}
+
+button{
+    background-color: lightgray;
+}
